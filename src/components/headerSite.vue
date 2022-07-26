@@ -2,8 +2,7 @@
 
     <div id="headerSite">
 
-        <div id="topHeader" class="d-flex align-items-center text-white">
-
+        <div id="topHeader" class="d-flex align-items-center">
             <div class="container">
                 <div class="row">
 
@@ -61,7 +60,41 @@
         </div>
 
         <div id="bottomHeader">
+            <div class="container">
+                <div class="row position-relative">
 
+                    <nav class="navbar navbar-expand-lg m-5">
+
+                        <img class="img-fluid" src="../assets/img/nexgen-logo-web.png" alt="logo">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li v-for="(lindex, index) in navLists" :key="index" class="nav-item mx-2">
+                                    <a class="nav-link" :href="lindex.url"> {{ lindex.text }} <span
+                                            class="sr-only"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div id="jumboText" class="d-flex flex-column position-absolute">
+                        <h1 class="jumboTitle">Logistics that goes further.</h1>
+                        <span class="jumboSpan">For 20 years working with the most innovative in the field of
+                            transport.</span>
+
+                        <div class="jumboButtons my-4">
+                            <button id="btnGreen" type="button" class="btn">GET IN TOUCH</button>
+                            <button id="btnHide" type="button" class="btn mx-3">READ MORE</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
 
     </div>
@@ -71,9 +104,36 @@
 
 <script>
 export default {
-    name: 'headerSite',
-    props: {
-    }
+    data: function () {
+        return {
+            navLists: [
+                {
+                    text: "HOME",
+                    url: "#"
+                },
+                {
+                    text: "SERVICES",
+                    url: "#"
+                },
+                {
+                    text: "SKILLS",
+                    url: "#"
+                },
+                {
+                    text: "PARTNERS",
+                    url: "#"
+                },
+                {
+                    text: "BLOG",
+                    url: "#"
+                },
+                {
+                    text: "GET IN TOUCH",
+                    url: "#"
+                },
+            ],
+        }
+    },
 }
 </script>
 
@@ -82,8 +142,8 @@ export default {
 @import "../assets/style/var.scss";
 
 #headerSite {
-    height: 50vh;
-    background-color: $RiverBed;
+    height: 80vh;
+    background-image: url("../assets/img/jumbo.jpg");
 
     #topHeader {
         height: 5vh;
@@ -95,6 +155,56 @@ export default {
 
         #topHeaderR {
             width: 50%;
+        }
+    }
+
+    #bottomHeader {
+        nav {
+            img {
+                width: 180px;
+                filter: invert(2);
+            }
+
+            ul {
+                li {
+                    a {
+                        color: white;
+                        font-size: .8rem;
+                        padding: .8rem 1.2rem;
+                    }
+                }
+
+                li:hover,
+                li.active {
+                    background-color: #058182;
+                }
+            }
+        }
+
+        #jumboText {
+            width: 30%;
+            position: absolute;
+            right: 300px;
+            top: 200px;
+
+            .jumboTitle {
+                font-size: 4rem;
+            }
+
+            .jumboSpan {
+                color: darkgray;
+            }
+
+            .jumboButtons {
+                button {
+                    // STYLE BUTTONS
+                    background-color: #058182;
+                    color: white;
+                    font-size: .8rem;
+                    padding: .5rem .8rem;
+                    border-radius: 0;
+                }
+            }
         }
     }
 }
