@@ -45,6 +45,7 @@ export default {
 <style scoped lang="scss">
 #sectionLogos {
     height: 20vh;
+    background-color: beige;
     .divLogo{
         width: 200px;
     }
