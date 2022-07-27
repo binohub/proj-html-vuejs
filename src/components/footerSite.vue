@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
 
-                <div id="topFooter ">
-                    <div id="textFooter" class="col-2 py-5">
+                <div id="topFooter" class="d-flex justify-content-between">
+                    <div id="textFooter" class="col-2">
                         <img class="img-fluid" src="../assets/img/nexgen-logo-web.png" alt="logo">
                         <span>A Functional HTML Template For Corporate & Business.</span>
                         <div id="topHeaderNumber" class="my-2">
@@ -23,7 +23,18 @@
                             </svg>
                             <span class="mx-2">hello@example.com</span>
                         </div>
-                        <button type="button" class="btn btn-outline-success fw-bold my-2">GET IN TOUCH</button>
+                        <button type="button" class="btn btn-outline-success text-white my-2">GET IN TOUCH</button>
+                    </div>
+                    <div v-for="(item, index) in footerLists" :key="index" class="infoFooter col-2">
+                        <h2 class="fw-bold text-white"> {{ item.title }} </h2>
+                        <ul class="">
+                            <li>> The Company</li>
+                            <li>> Institutional</li>
+                            <li>> Social & Events</li>
+                            <li>> Innovation</li>
+                            <li>> Environment</li>
+                            <li>> Technology</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -39,6 +50,21 @@
 
 <script>
 export default {
+    data: function () {
+        return {
+            footerLists: [
+                {
+                    title: "About",
+                },
+                {
+                    title: "Transport",
+                },
+                {
+                    title: "Support",
+                },
+            ],
+        }
+    },
 }
 </script>
 
@@ -47,10 +73,25 @@ export default {
 #footerSite {
     background-color: black;
     color: white;
+    background-image: url("../assets/img/bg-10.jpg");
 
     #topFooter {
-        background-color: antiquewhite; 
+        padding: 100px 0px;
+        color: lightgray;
+
         #textFooter {
+            img {
+                filter: invert(2);
+            }
+        }
+
+        .infoFooter {
+            text-align: left;
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
         }
     }
 
