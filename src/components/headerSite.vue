@@ -18,7 +18,7 @@
                     </div>
                     <div id="topHeaderR">
 
-                        <div id="number" class="px-3">
+                        <div id="number" class="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-telephone-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -27,7 +27,7 @@
                             <span class="mx-2">+1 (305) 1234-5678</span>
                         </div>
 
-                        <div id="mail" class="px-3">
+                        <div id="mail" class="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-envelope-fill" viewBox="0 0 16 16">
                                 <path
@@ -36,7 +36,7 @@
                             <span class="mx-2">hello@example.com</span>
                         </div>
 
-                        <div id="social" class="px-3">
+                        <div id="social" class="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="mx-2 bi bi-facebook" viewBox="0 0 16 16">
                                 <path
@@ -187,7 +187,7 @@ export default {
                         a {
                             color: white;
                             font-size: 1rem;
-
+                            margin: 0 1rem;
                         }
                     }
                 }
@@ -202,10 +202,10 @@ export default {
             width: 30%;
             position: absolute;
             right: 300px;
-            top: 200px;
+            top: 250px;
 
             .jumboTitle {
-                font-size: 4rem;
+                font-size: 5rem;
                 font-weight: bold;
             }
             .jumboButtons{

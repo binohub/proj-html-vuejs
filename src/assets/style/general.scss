@@ -1,15 +1,13 @@
 #number, 
 #mail,
 #social,
+#map,
 #topHeaderL
 {
     color: $Manatee;
     font-size: .8rem;
-}
-
-.logoNex{
-    width: 180px;
-    filter: invert(2);
+    margin: 1rem 0;
+    padding-right: 2rem;
 }
 
 #btnGreen{
@@ -19,6 +17,7 @@
     font-size: .8rem;
     padding: .8rem 1.5rem;
     border-radius: 0;
+    width: fit-content;
 }
 #btnHide{
     background-color: transparent;
@@ -28,6 +27,12 @@
     font-size: .8rem;
     padding: .8rem 1.5rem;
     border-radius: 0;
+    width: fit-content;
+}
+
+.logoNex{
+    width: 200px;
+    filter: invert(2);
 }
 
 .shadowTitle{
@@ -36,4 +41,5 @@
 .txtSub{
     color: $Manatee;
     font-size: 1.2rem;
+    margin: .5rem 0;
 }
