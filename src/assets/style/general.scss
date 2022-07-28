@@ -1,0 +1,39 @@
+#number, 
+#mail,
+#social,
+#topHeaderL
+{
+    color: $Manatee;
+    font-size: .8rem;
+}
+
+.logoNex{
+    width: 180px;
+    filter: invert(2);
+}
+
+#btnGreen{
+    background-color: $BlueLagoon;
+    color: white;
+    font-weight: bold;
+    font-size: .8rem;
+    padding: .8rem 1.5rem;
+    border-radius: 0;
+}
+#btnHide{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 2px solid $BlueLagoon;
+    font-size: .8rem;
+    padding: .8rem 1.5rem;
+    border-radius: 0;
+}
+
+.shadowTitle{
+    text-shadow: 2px 8px $BlueLagoon;
+}
+.txtSub{
+    color: $Manatee;
+    font-size: 1.2rem;
+}
