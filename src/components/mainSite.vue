@@ -5,6 +5,7 @@
     <sectionLogos />
     <sectionNews />
     <sectionKnow />
+    <sectionTouch />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import sectionCompany from "../components/sectionCompany.vue"
 import sectionLogos from "../components/sectionLogos.vue"
 import sectionNews from "../components/sectionNews.vue"
 import sectionKnow from "../components/sectionKnow.vue"
+import sectionTouch from "../components/sectionTouch.vue"
 export default {
   components:{
     sectionServices,
@@ -21,6 +23,7 @@ export default {
     sectionLogos,
     sectionNews,
     sectionKnow,
+    sectionTouch,
   }
 }
 </script>
