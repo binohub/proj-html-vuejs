@@ -10,6 +10,15 @@
     padding-right: 2rem;
 }
 
+#inputGray{
+    width: 49%;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: .5rem;
+    background-color: $GrayNurse;
+    border: none;
+}
+
 #btnGreen{
     background-color: $BlueLagoon;
     color: white;
@@ -34,12 +43,28 @@
     width: 200px;
     filter: invert(2);
 }
+.titleNex{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
 
 .shadowTitle{
     text-shadow: 2px 8px $BlueLagoon;
 }
+
 .txtSub{
     color: $Manatee;
     font-size: 1.2rem;
     margin: .5rem 0;
+}
+.txtGreen{
+    color: $ElfGreen;
+    font-weight: bold;
+    font-size: .8rem;
+}
+.txtBgGreen{
+    background-color: rgba( $BlueLagoon, .2);
+    font-size: 3.5rem;
+    padding: .2rem 1rem;
+    color:  $BlueLagoon;
 }

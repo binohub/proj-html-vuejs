@@ -107,6 +107,7 @@ export default {
             }
             button{
                 margin: 1rem 0;
+
             }
         }
 
@@ -115,6 +116,7 @@ export default {
             h2{
                 font-size: 2rem;
                 margin: 2.8rem 0;
+                cursor: pointer;
             }
             ul {
                 list-style-type: none;
