@@ -4,10 +4,14 @@
         <div class="container">
             <div class="row justify-content-between py-5">
 
-                <span class="">OUR EDITORIAL CONTENT</span>
-                <h2 class="fw-bold">Latest News</h2>
+                <span class="txtGreen">OUR EDITORIAL CONTENT</span>
+                <div class="d-flex align-items-center">
+                    <h2 class="titleNex">Latest </h2>
+                    <h2 class="titleNex txtBgGreen">News</h2>
+                </div>
+
                 <div class="col-12 d-flex justify-content-between">
-                    <span>Every week we publish content about what is best in the business world.</span>
+                    <span class="txtSub">Every week we publish content about what is best in the business world.</span>
                     <button id="btnGreen" type="button" class="btn">SEE ALL</button>
                 </div>
                 <div v-for="(card, index) in newsCards" :key="index" class="square position-relative">
@@ -50,9 +54,7 @@ export default {
 #sectionNews {
     color: black;
 
-    span{
-        font-size: .6rem;
-    }
+
     div {
         button {
             background-color: #058182;

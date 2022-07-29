@@ -5,14 +5,18 @@
             <div class="row">
 
                 <div class="w-50 d-flex flex-column justify-content-center">
-                    <span class="companyTitle">ABOUT THE NETWORK</span>
-                    <h1>The Company</h1>
-                    <span>With all of this expertise and capability comes an unrivalled commitment to customer
+                    <span class="txtGreen">ABOUT THE NETWORK</span>
+                    <div class="d-flex align-items-center">
+                        <h1 class="txtBgGreen fw-bold">The </h1>
+                        <h1 class="fw-bold">Company</h1>
+                    </div>
+
+                    <span class="txtSub">With all of this expertise and capability comes an unrivalled commitment to customer
                         service.</span>
 
-                    <div v-for="(item, index) in companyList" :key="index">
-                        <h4>{{ item.title }}</h4>
-                        <span>{{ item.desc }}</span>
+                    <div class="liCompany" v-for="(item, index) in companyList" :key="index">
+                        <h4 class="fw-bold">{{ item.title }}</h4>
+                        <span class="txtSub">{{ item.desc }}</span>
                     </div>
 
                 </div>
@@ -56,6 +60,11 @@ export default {
 
     span {
         font-size: .6rem;
+    }
+    .liCompany{
+        padding-left: 5rem;
+        padding-top: 2rem;
+        padding-right: 10rem;
     }
 
 }

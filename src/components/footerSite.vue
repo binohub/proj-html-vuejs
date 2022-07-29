@@ -138,7 +138,7 @@ export default {
 
         height: 5vh;
         width: 100%;
-        font-size: .6rem;
+        font-size: .8rem;
     }
 }
 </style>

@@ -5,9 +5,9 @@
             <div class="row justify-content-between py-5">
 
                 <div class="w-50">
-                    <span>NEWSLETTER</span>
-                    <h2>Know First</h2>
-                    <span>Follow closely and receive content about our company and the news of the current
+                    <span class="txtGreen">NEWSLETTER</span>
+                    <h2 class="txtBgGreen fw-bold text-white">Know First</h2>
+                    <span class="txtSub fw-bold">Follow closely and receive content about our company and the news of the current
                         market.</span>
                 </div>
                 <div class="input&btn w-50">
@@ -36,7 +36,9 @@
     padding: 8rem 0;
         input{
             border-radius: 0;
-            background: rgb(255, 255, 255, .7)
+            border: 0px;
+            width: 60%;
+            background: rgb(255, 255, 255, .5)
         }
         button{
             border-radius: 0;

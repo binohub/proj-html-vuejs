@@ -5,19 +5,19 @@
             <div class="row justify-content-between">
 
                 <div class="servicesText d-flex flex-column justify-content-center w-25">
-                    <span class="servicesTitleSmall">OUR BUSINESS AREAS</span>
-                    <h1>Logistics Services</h1>
-                    <span>
+                    <span class="txtGreen">OUR BUSINESS AREAS</span>
+                    <h1 class="titleNex">Logistics Services</h1>
+                    <span class="txtSub">
                         We are leaders in providing logistics services with a set of cutting edge technologies
                         and a team of experienced and renowned professionals.
                     </span>
                     <div class="badges my-3 ">
-                        <a href="#" class="mx-1 badge badge-success">Tradition</a>
-                        <a href="#" class="mx-1 badge badge-success">Quality</a>
-                        <a href="#" class="mx-1 badge badge-success">Security</a>
+                        <a href="#" class="mx-1 badge txtBgGreen">Tradition</a>
+                        <a href="#" class="mx-1 badge txtBgGreen">Quality</a>
+                        <a href="#" class="mx-1 badge txtBgGreen">Security</a>
                     </div>
 
-                    <button id="btnGreen" type="button" class="btn">READ MORE</button>
+                    <button id="btnGreen" type="button" class="btn ">READ MORE</button>
                 </div>
 
                 <div v-for="(card, index) in servicesCards" :key="index" class="servicesCard mx-3">
@@ -80,7 +80,6 @@ export default {
 
             div.badges {
                 a.badge {
-                    background-color: #1bcccc;
                     color: #058182;
                     text-decoration: none;
                     padding: .6rem .8rem;
